@@ -4,6 +4,8 @@ import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.time.LocalDate;
+
 @NoArgsConstructor
 @Data
 @Entity
@@ -23,15 +25,18 @@ public class Buch {
     private String isbn;
     @Column(name = "ausleihstatus")
     private Status ausleihstatus;
+    @Column(name = "verlaengerungsdatum")
+    private LocalDate verlaengerungsdatum;
+    @Column(name = "rueckgabedatum")
+    private LocalDate rueckgabedatum;
 
-
-
-    public Buch(String titel, String autor, String verlag, String isbn, Status ausleihstatus) {
+    public Buch(String titel, String autor, String verlag, String isbn, Status ausleihstatus, LocalDate verlaengerungsdatum, LocalDate rueckgabedatum) {
         this.titel = titel;
         this.autor = autor;
         this.verlag = verlag;
         this.isbn = isbn;
         this.ausleihstatus = ausleihstatus;
-
+        this.verlaengerungsdatum = verlaengerungsdatum;
+        this.rueckgabedatum = rueckgabedatum;
     }
 }
