@@ -17,6 +17,9 @@ public class MensaService {
     public Gericht getGerichtByID(long id){
         return mensaRepository.findById(id).orElseThrow(EntityNotFoundException::new);
     }
+    public void findGerichtByTypeAndDay(){
+
+    }
     //nochmal angucken
     public List<Gericht> getGerichteAnTag(Wochentag wochentag){
         return mensaRepository.findAll();

@@ -40,6 +40,7 @@ public class Seap2HawConnectApplication implements CommandLineRunner {
        allergene.add(Allergen.GETREIDE);
        List<Wochentag> wochentage = new ArrayList<>();
        wochentage.add(Wochentag.DIENSTAG);
+       wochentage.add(Wochentag.FREITAG);
        mensaRepository.save(new Gericht("Pasta",4.0,allergene, Ernaehrungstyp.VEGAN,wochentage));
 
     }

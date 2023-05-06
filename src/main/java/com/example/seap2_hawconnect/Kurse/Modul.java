@@ -16,6 +16,8 @@ public class Modul {
     private String modulname;
     @Column (name = "dozentenname")
     private Dozent dozentenname;
+    @Column (name = "praktikumsgruppe")
+    private Integer praktikumsgruppe;
 
 
 }
