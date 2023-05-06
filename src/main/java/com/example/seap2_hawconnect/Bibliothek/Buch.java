@@ -39,4 +39,24 @@ public class Buch {
         this.verlaengerungsdatum = verlaengerungsdatum;
         this.rueckgabedatum = rueckgabedatum;
     }
+
+    public Buch(String titel, String autor, String verlag, String isbn, Status ausleihstatus, LocalDate verlaengerungsdatum) {
+        this.titel = titel;
+        this.autor = autor;
+        this.verlag = verlag;
+        this.isbn = isbn;
+        this.ausleihstatus = ausleihstatus;
+        this.verlaengerungsdatum = verlaengerungsdatum;
+    }
+
+
+    public Buch(String titel, String autor, String verlag, String isbn, Status ausleihstatus) {
+        this.titel = titel;
+        this.autor = autor;
+        this.verlag = verlag;
+        this.isbn = isbn;
+        this.ausleihstatus = ausleihstatus;
+        this.verlaengerungsdatum = verlaengerungsdatum;
+        this.rueckgabedatum = rueckgabedatum;
+    }
 }
