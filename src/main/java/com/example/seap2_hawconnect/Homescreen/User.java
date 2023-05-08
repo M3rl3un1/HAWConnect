@@ -23,7 +23,7 @@ public class User {
     @Column
     private String email;
     @Column
-    private String semesteranzahl;
+    private int semesteranzahl;
     @OneToMany
     private List<Modul> belegteModule;
     @OneToMany

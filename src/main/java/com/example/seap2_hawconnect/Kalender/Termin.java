@@ -1,11 +1,10 @@
 package com.example.seap2_hawconnect.Kalender;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
+import java.time.LocalDate;
 
 @NoArgsConstructor
 @Data
@@ -15,4 +14,8 @@ public class Termin {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     Long terminID;
+
+    @Column
+    private LocalDate dateTime;
+
 }
