@@ -11,7 +11,7 @@ import java.util.List;
 @Transactional
 @Repository
 public interface MensaRepository extends JpaRepository<Gericht, Long> {
-    public List<Gericht> findByErnaehrungstypContainingAndAngebotAnTagContaining(Ernaehrungstyp ernaehrungstyp, List<Wochentag> angebotAnTag);
+   List<Gericht> findByErnaehrungstypAndAngebotAnTagIn(Ernaehrungstyp ernaehrungstyp, List<Wochentag> angebotAnTag);
 
-    public List<Gericht> findAll();
+     List<Gericht> findAll();
 }
